@@ -1,0 +1,21 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,VPN Connection,0,$0,$0,USD,Working days per month (22)
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,$102,$1220,USD,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),Web Servers,Amazon EC2,0,$1002,$12025,USD,"Operating system (Linux), Quantity (7), Pricing strategy (On-Demand Instances), Storage amount (30 GB), Instance type (m5.xlarge)"
+My Estimate,US East (N. Virginia),App Servers,Amazon EC2,0,$1002,$12025,USD,"Operating system (Linux), Quantity (7), Pricing strategy (On-Demand Instances), Storage amount (30 GB), Instance type (m5.xlarge)"
+My Estimate,US East (N. Virginia),Application Load Balancer,Application Load Balancer,0,$2677,$32127,USD,Number of Application Load Balancers (3)
+My Estimate,US East (N. Virginia),Network Load Balancer,Network Load Balancer,0,$2020,$24243,USD,"Number of Network Load Balancers (3), Processed bytes per NLB for TCP (150 GB per hour)"
+My Estimate,US East (N. Virginia),DB Instances,Amazon RDS for PostgreSQL,0,$5235,$62819,USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (30 GB per month), Nodes (5), Instance Type (db.m5.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand), Additional backup storage (30 GB)"
+My Estimate,US East (N. Virginia),Route 53,Amazon Route 53,0,$548,$6576,USD,"Hosted Zones (1), Number of Elastic Network Interfaces (6)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,$471,$5652,USD,S3 Standard storage (20 TB per month)
+My Estimate,US East (N. Virginia),,Data Transfer,0,$0,$0,USD,
+My Estimate,US East (N. Virginia),CloudFront,Amazon CloudFront,0,$300,$3600,USD,Number of requests (HTTPS) (300000000 per month)
+My Estimate,US East (N. Virginia),DB Instance Replicas,Amazon RDS for PostgreSQL,0,$5235,$62819,USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (30 GB per month), Nodes (5), Instance Type (db.m5.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand), Additional backup storage (30 GB)"
+Sum,,,,,$18592,,,
+,,,,,,,,
+,,,,,,,,EC2: Changed the number of instances from 5 to 7
+,,,,,,,,RDS: Changed the number of nodes from 3 to 5 and deployment option from Single-AZ to Multi-AZ
+,,,,,,,,Application Load Balancer and Network Load Balancer: Changed the number from 1 to 3 and the Processed bytes per NLB for TCP  from 300 GB per hour to 150 GB per hour
+,,,,,,,,Route 53: Changed Number of Elastic Network Interfaces from 4 to 6
+,,,,,,,,NAT Gateways: Changed from 1 to 2
+,,,,,,,,CloudFront: Changed the number of requests (HTTPS)  from 150000000 per month  to 300000000 per month
